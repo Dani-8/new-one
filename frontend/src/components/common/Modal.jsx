@@ -74,3 +74,5 @@ export const Modal = ({
         </AnimatePresence>
     );
 };
+
+export default Modal;

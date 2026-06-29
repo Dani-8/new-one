@@ -24,3 +24,5 @@ export const PageContainer = ({ children, title, subtitle, action, className = '
         </div>
     );
 };
+
+export default PageContainer;

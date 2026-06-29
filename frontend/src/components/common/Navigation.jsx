@@ -75,3 +75,5 @@ export const Tooltip = ({
         </div>
     );
 };
+
+export default { Breadcrumb, Tooltip };

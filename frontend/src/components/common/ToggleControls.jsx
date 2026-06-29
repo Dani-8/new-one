@@ -135,3 +135,5 @@ export const Switch = ({
         </label>
     );
 };
+
+export default { Checkbox, Radio, Switch };

@@ -37,3 +37,5 @@ export const ProtectedLayoutPlaceholder = ({ children, requiredRole = 'user', cu
         </div>
     );
 };
+
+export default ProtectedLayoutPlaceholder;

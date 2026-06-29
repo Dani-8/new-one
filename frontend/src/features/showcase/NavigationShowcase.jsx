@@ -8,7 +8,7 @@ import Footer from '../../components/navigation/Footer';
 import Button from '../../components/common/Button';
 import Badge from '../../components/common/Badge';
 import Card from '../../components/common/Card';
-// import Breadcrumb from '../../components/common/Breadcrumb';
+import Breadcrumb from '../../components/common/Breadcrumb';
 
 import { Sparkles, ArrowRight } from 'lucide-react';
 
