@@ -4,14 +4,14 @@ import {
     Layers, Sliders, FileText, Bell, Sparkles, Home, RefreshCw, Eye, Trash2, Mail, Info, AlertTriangle, CheckCircle, X
 } from 'lucide-react';
 
-import { Button } from '../../components/common/Button';
+import Button from '../../components/common/Button';
 import { Input } from '../../components/common/Input';
 import { Textarea } from '../../components/common/Textarea';
 import { Select } from '../../components/common/Select';
 import { Checkbox, Radio, Switch } from '../../components/common/ToggleControls';
-import { Card } from '../../components/common/Card';
-import { Badge } from '../../components/common/Badge';
-import { Avatar } from '../../components/common/Avatar';
+import Card from '../../components/common/Card';
+import Badge from '../../components/common/Badge';
+import Avatar from '../../components/common/Avatar';
 import { Modal } from '../../components/common/Modal';
 import { Skeleton } from '../../components/feedback/Skeleton';
 import { Alert } from '../../components/common/Alert';

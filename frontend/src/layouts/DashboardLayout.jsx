@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, LogOut, LayoutDashboard, Building2, Users, Settings, CalendarRange, BarChart3, Sparkles, User, Bell } from 'lucide-react';
-import { Avatar } from '../components/common/Avatar';
-import { Button } from '../components/common/Button';
-import { Badge } from '../components/common/Badge';
+import { Menu, X, LogOut, LayoutDashboard, Building2, Users, Settings, 
+    CalendarRange, BarChart3, Sparkles, User, Bell } from 'lucide-react';
+import Avatar from '../components/common/Avatar';
+import Button from '../components/common/Button';
+import Badge from '../components/common/Badge';
 
 export const DashboardLayout = ({ children, currentRole = 'user', activeTab, onTabSelect, onLogout }) => {
     const [sidebarCollapsed, setSidebarCollapsed] = useState(false);

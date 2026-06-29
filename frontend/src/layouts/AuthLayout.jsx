@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowLeft, Sparkles } from 'lucide-react';
-import { Button } from '../components/common/Button';
-import { Badge } from '../components/common/Badge';
+import Button from '../components/common/Button';
+import Badge from '../components/common/Badge';
 
 export const AuthLayout = ({ children, onNavigate }) => {
     return (

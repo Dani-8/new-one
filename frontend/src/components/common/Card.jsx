@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-export const Card = ({
+const Card = ({
     children,
     className = '',
     hoverEffect = true,
@@ -36,3 +36,5 @@ export const Card = ({
         </motion.div>
     );
 };
+
+export default Card;

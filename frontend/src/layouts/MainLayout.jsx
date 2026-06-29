@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Compass, Sparkles, HelpCircle } from 'lucide-react';
-import { Button } from '../components/common/Button';
-import { Avatar } from '../components/common/Avatar';
-import { Badge } from '../components/common/Badge';
+import Button from '../components/common/Button';
+import Avatar from '../components/common/Avatar';
+import Badge from '../components/common/Badge';
 
 export const MainLayout = ({ children, currentRole = 'guest', onNavigate }) => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

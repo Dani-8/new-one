@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ShieldAlert } from 'lucide-react';
-import { Button } from './Button';
-import { Badge } from './Badge';
+import Button from './Button';
+import Badge from './Badge';
 
 export const ProtectedLayoutPlaceholder = ({ children, requiredRole = 'user', currentRole = 'guest', onSimulateLogin }) => {
     const isAuthorized = currentRole === requiredRole || currentRole === 'admin';
