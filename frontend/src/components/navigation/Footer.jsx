@@ -5,6 +5,7 @@ import { directoryColumns } from './constants';
 const Footer = ({ onNavigate }) => {
     return (
         <footer className="border-t border-white/5 bg-[#030712] pt-16 pb-8 px-4 md:px-8 select-none relative overflow-hidden text-left">
+
             {/* Dynamic Gold Light Ray behind footer */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[300px] bg-gradient-to-t from-amber-500/2 to-transparent blur-3xl pointer-events-none" />
 
@@ -17,6 +18,7 @@ const Footer = ({ onNavigate }) => {
                             <div className="w-9 h-9 rounded-lg bg-[#d19f4a] flex items-center justify-center font-black text-[#030712] text-lg">
                                 S
                             </div>
+                            
                             <span className="font-extrabold text-lg tracking-tight text-[#f3f4f6]">
                                 Stay<span className="text-[#d19f4a]">AI</span>
                             </span>
@@ -82,4 +84,4 @@ const Footer = ({ onNavigate }) => {
     );
 };
 
-export default Footer;
+export default Footer

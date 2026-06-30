@@ -112,4 +112,4 @@ const MobileDrawer = ({
     );
 };
 
-export default MobileDrawer;
+export default MobileDrawer
