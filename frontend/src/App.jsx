@@ -6,7 +6,7 @@ import NavigationShowcase from './features/showcase/NavigationShowcase'
 function App() {
     return (
         <NavigationShowcase />
-    );
+    )
 }
 
-export default App;
+export default App
