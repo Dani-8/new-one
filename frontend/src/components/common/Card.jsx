@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+
 const Card = ({
     children,
     className = '',
     hoverEffect = true,
-    variant = 'base', // 'base' | 'premium'
+    variant = 'base',               // 'base' | 'premium'
     onClick,
     ...props
 }) => {
@@ -37,4 +38,4 @@ const Card = ({
     );
 };
 
-export default Card;
+export default Card
