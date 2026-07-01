@@ -84,15 +84,18 @@ const MobileDrawer = ({
                         <div className="border-t border-white/5 pt-4 space-y-4">
                             <div className="flex items-center gap-3 bg-white/2 p-3 rounded-xl border border-white/5">
                                 <Avatar name="Sarah Jenkins" status="premium" size="sm" />
+
                                 <div className="min-w-0">
                                     <p className="text-xs font-bold text-white truncate">
                                         Sarah Jenkins
                                     </p>
+
                                     <p className="text-[9px] text-slate-400 capitalize truncate">
                                         Role: {currentRole}
                                     </p>
                                 </div>
                             </div>
+
 
                             <button
                                 onClick={() => {
@@ -102,6 +105,7 @@ const MobileDrawer = ({
                                 className="w-full flex items-center justify-center gap-3 px-4 py-3 text-red-400 bg-red-500/5 hover:bg-red-500/10 rounded-xl text-xs font-bold uppercase tracking-wider transition-colors cursor-pointer"
                             >
                                 <LogOut className="w-4 h-4 shrink-0" />
+
                                 <span>Disconnect Profile</span>
                             </button>
                         </div>
