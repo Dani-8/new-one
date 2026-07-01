@@ -23,8 +23,11 @@ const limiter = rateLimit({
     standardHeaders: true, // Expose standard rate limit headers
     legacyHeaders: false, // Disable older headers
     message: 'Too many requests from this address. Please try again after 15 minutes.'
-});
-app.use('/api', limiter);
+})
+
+
+app.use('/api', limiter)
+
 
 // Configure CORS to safely allow requests from defined origins (frontend port 5173 / production domains)
 app.use(cors({

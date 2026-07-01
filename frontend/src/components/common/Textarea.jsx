@@ -30,6 +30,7 @@ export const Textarea = React.forwardRef(({
         `}
                 {...props}
             />
+            
             <AnimatePresence>
                 {error && (
                     <motion.p
