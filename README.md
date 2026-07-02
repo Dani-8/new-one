@@ -1,7 +1,3 @@
 # StayAI!!!
 
-# Not Finish Yet
-
-
-
-
+# Not Finish Yet. 
