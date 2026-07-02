@@ -1,3 +1,3 @@
 # StayAI!!!
 
-# Work in progress — This project is not finished yet. 
+# 🚧 Work in progress — this project is not finished yet.
