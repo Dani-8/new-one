@@ -5,7 +5,7 @@ import { ChevronDown, Check } from 'lucide-react'
 const cubicTransition = {
     ease: [0.16, 1, 0.3, 1],
     duration: 0.35
-};
+}
 
 export const Select = React.forwardRef(({
     label,

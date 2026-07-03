@@ -1,16 +1,16 @@
-import express from 'express';
-import cors from 'cors';
-import helmet from 'helmet';
-import cookieParser from 'cookie-parser';
+import express from 'express'
+import cors from 'cors'
+import helmet from 'helmet'
+import cookieParser from 'cookie-parser'
 import morgan from 'morgan';
-import rateLimit from 'express-rate-limit';
+import rateLimit from 'express-rate-limit'
 
-import globalErrorHandler from './middleware/errorMiddleware.js';
-import AppError from './utils/appError.js';
+import globalErrorHandler from './middleware/errorMiddleware.js'
+import AppError from './utils/appError.js'
 
 const app = express()
-// -------------------------------------------------------------------------------
-// -------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// -
 
 // 1. SECURITY MIDDLEWARE LAYER
 // Configure HTTP security headers
@@ -27,6 +27,7 @@ const limiter = rateLimit({
 
 
 app.use('/api', limiter)
+
 
 
 // Configure CORS to safely allow requests from defined origins (frontend port 5173 / production domains)
