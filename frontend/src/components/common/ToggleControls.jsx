@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Check } from 'lucide-react';
+import React from 'react'
+import { motion } from 'framer-motion'
+import { Check } from 'lucide-react'
 
 const springConfig = {
     type: 'spring',
@@ -136,4 +136,4 @@ export const Switch = ({
     );
 };
 
-export default { Checkbox, Radio, Switch };
+export default { Checkbox, Radio, Switch }
