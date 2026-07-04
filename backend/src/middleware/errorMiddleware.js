@@ -55,6 +55,7 @@ const sendErrorProd = (err, req, res) => {
 }
 
 
+
 const globalErrorHandler = (err, req, res, next) => {
     err.statusCode = err.statusCode || 500
     err.status = err.status || 'error'
@@ -75,5 +76,6 @@ const globalErrorHandler = (err, req, res, next) => {
         sendErrorProd(error, req, res)
     }
 }
+
 
 export default globalErrorHandler

@@ -1,11 +1,12 @@
 import mongoose from 'mongoose'
 
+
 const connectDB = async () => {
-    const mongoUri = process.env.MONGO_URI;
+    const mongoUri = process.env.MONGO_URI
 
     if (!mongoUri) {
-        console.error('🔴 MONGO_URI is missing from environment variables.');
-        process.exit(1);
+        console.error('🔴 MONGO_URI is missing from environment variables.')
+        process.exit(1)
     }
 
     // Production-grade connection pooling and resilience options
