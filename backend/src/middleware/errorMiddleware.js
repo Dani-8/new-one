@@ -19,9 +19,10 @@ const handleDuplicateFieldsDB = (err) => {
 // Handler for Mongoose Schema Validation failures
 const handleValidationErrorDB = (err) => {
     const errors = Object.values(err.errors).map((el) => el.message);
-    const message = `Validation parameters failed: ${errors.join('. ')}`;
-    return new AppError(message, 400);
-};
+    const message = `Validation parameters failed: ${errors.join('. ')}`
+    return new AppError(message, 400)
+}
+
 
 // Standard response payload during development
 const sendErrorDev = (err, req, res) => {
@@ -31,7 +32,8 @@ const sendErrorDev = (err, req, res) => {
         message: err.message,
         stack: err.stack
     });
-};
+}
+
 
 // Standard response payload during production (no internal stack leakage)
 const sendErrorProd = (err, req, res) => {
