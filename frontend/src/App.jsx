@@ -5,8 +5,8 @@ import NavigationShowcase from './features/showcase/NavigationShowcase'
 
 function App() {
     return (
-        // <ComponentLibraryShowcase />
-        <LayoutsShowcase />
+        <ComponentLibraryShowcase />
+        // <LayoutsShowcase />
         // <NavigationShowcase />
     )
 }
