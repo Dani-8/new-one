@@ -1,10 +1,12 @@
 import AppError from '../utils/appError.js'
 
+
 // Handler for invalid MongoDB ObjectIDs
 const handleCastErrorDB = (err) => {
-    const message = `Invalid path format: ${err.path} is defined as '${err.value}'.`;
-    return new AppError(message, 400);
-};
+    const message = `Invalid path format: ${err.path} is defined as '${err.value}'.`
+    return new AppError(message, 400)
+}
+
 
 // Handler for duplicate key violations (MongoDB Code 11000)
 const handleDuplicateFieldsDB = (err) => {
