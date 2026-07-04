@@ -10,10 +10,11 @@ const handleCastErrorDB = (err) => {
 
 // Handler for duplicate key violations (MongoDB Code 11000)
 const handleDuplicateFieldsDB = (err) => {
-    const value = Object.keys(err.keyValue || err.keyPattern)[0];
-    const message = `The resource already contains a conflicting value for: '${value}'. Please use another value.`;
-    return new AppError(message, 409);
-};
+    const value = Object.keys(err.keyValue || err.keyPattern)[0]
+    const message = `The resource already contains a conflicting value for: '${value}'. Please use another value.`
+    return new AppError(message, 409)
+}
+
 
 // Handler for Mongoose Schema Validation failures
 const handleValidationErrorDB = (err) => {
