@@ -51,29 +51,29 @@ const sendErrorProd = (err, req, res) => {
     res.status(500).json({
         status: 'error',
         message: 'An internal transmission error occurred. Our engineering team has been notified.'
-    });
-};
+    })
+}
 
 
 const globalErrorHandler = (err, req, res, next) => {
-    err.statusCode = err.statusCode || 500;
-    err.status = err.status || 'error';
+    err.statusCode = err.statusCode || 500
+    err.status = err.status || 'error'
 
     if (process.env.NODE_ENV === 'development') {
-        sendErrorDev(err, req, res);
+        sendErrorDev(err, req, res)
     } else {
-        let error = { ...err };
-        error.message = err.message;
-        error.name = err.name;
-        error.code = err.code;
+        let error = { ...err }
+        error.message = err.message
+        error.name = err.name
+        error.code = err.code
 
         // Standardize common MongoDB exceptions
-        if (error.name === 'CastError') error = handleCastErrorDB(error);
-        if (error.code === 11000) error = handleDuplicateFieldsDB(error);
-        if (error.name === 'ValidationError') error = handleValidationErrorDB(error);
+        if (error.name === 'CastError') error = handleCastErrorDB(error)
+        if (error.code === 11000) error = handleDuplicateFieldsDB(error)
+        if (error.name === 'ValidationError') error = handleValidationErrorDB(error)
 
-        sendErrorProd(error, req, res);
+        sendErrorProd(error, req, res)
     }
-};
+}
 
-export default globalErrorHandler;
+export default globalErrorHandler
