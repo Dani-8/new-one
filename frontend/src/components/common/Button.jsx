@@ -7,7 +7,8 @@ const springConfig = {
     stiffness: 300,
     damping: 25,
     mass: 0.8
-};
+}
+
 
 export const Button = React.forwardRef(({
     children,

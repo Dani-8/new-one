@@ -10,7 +10,7 @@ import AppError from './utils/appError.js'
 
 const app = express()
 // ------------------------------------------------------------------------------
-// -
+
 
 // 1. SECURITY MIDDLEWARE LAYER
 // Configure HTTP security headers
