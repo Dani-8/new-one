@@ -35,20 +35,3 @@
     -webkit-font-smoothing: antialiased;
   }
 }
-
-/* Glass Card Rule Spec */
-.glass-card {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
-}
-
-/* Luxury Interactive Glass Card (Glows on hover) */
-.glass-card-interactive:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(209, 159, 74, 0.2); /* Soft Gold Blend */
-  box-shadow: 0 12px 40px 0 rgba(209, 159, 74, 0.04);
-  transform: translateY(-2px);
-}
