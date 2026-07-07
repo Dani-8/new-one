@@ -1,21 +1,28 @@
 {
-    "name": "golden-bite-frontend",
-    "version": "1.0.0",
-    "private": true,
-    "description": "Frontend client for Golden Bite",
-    "type": "module",
-    "dependencies": {
-        "react": "^19.0.1",
-        "react-dom": "^19.0.1",
-        "lucide-react": "^0.546.0",
-        "motion": "^12.23.24",
-        "tailwindcss": "^4.1.14"
-    },
-    "devDependencies": {
-        "@tailwindcss/vite": "^4.1.14",
-        "@vitejs/plugin-react": "^5.0.4",
-        "autoprefixer": "^10.4.21",
-        "vite": "^6.2.3",
-        "typescript": "~5.8.2"
-    }
+  "name": "golden-bite-frontend",
+  "description": "Frontend client for Golden Bite",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "eslint": "^10.6.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.3",
+    "globals": "^17.7.0",
+    "vite": "^8.1.1"
+  }
 }
