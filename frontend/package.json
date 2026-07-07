@@ -1,8 +1,8 @@
 {
-    "name": "pink-bite-frontend",
+    "name": "golden-bite-frontend",
     "version": "1.0.0",
     "private": true,
-    "description": "Frontend client for Pink Bite",
+    "description": "Frontend client for Golden Bite",
     "type": "module",
     "dependencies": {
         "react": "^19.0.1",
