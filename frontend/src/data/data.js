@@ -123,19 +123,24 @@ export const INITIAL_FOOD_ITEMS = [
 
 export const CATEGORIES = ['All', 'Burgers', 'Pizza & Pasta', 'Healthy', 'Desserts', 'Drinks'];
 
+
+
 // LocalStorage key names
 const FOODS_KEY = 'restaurant_foods';
 const ORDERS_KEY = 'restaurant_orders';
 const USERS_KEY = 'restaurant_users';
 const CURRENT_USER_KEY = 'restaurant_curr_user';
 
+
 // Local storage helper functions
 export const getStoredFoods = () => {
     const data = localStorage.getItem(FOODS_KEY);
+
     if (!data) {
         localStorage.setItem(FOODS_KEY, JSON.stringify(INITIAL_FOOD_ITEMS));
         return INITIAL_FOOD_ITEMS;
     }
+
     return JSON.parse(data);
 };
 
@@ -152,16 +157,19 @@ export const saveStoredOrders = (orders) => {
     localStorage.setItem(ORDERS_KEY, JSON.stringify(orders));
 };
 
+
 export const getStoredUsers = () => {
     const data = localStorage.getItem(USERS_KEY);
     const defaultUsers = [
         { id: 'usr_admin', email: 'admin@restaurant.com', name: 'Admin Host', role: 'admin' },
         { id: 'usr_customer', email: 'guest@eats.com', name: 'Gourmet Lover', role: 'customer' }
     ];
+
     if (!data) {
         localStorage.setItem(USERS_KEY, JSON.stringify(defaultUsers));
         return defaultUsers;
     }
+
     return JSON.parse(data);
 };
 
