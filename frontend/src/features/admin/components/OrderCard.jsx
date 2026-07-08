@@ -13,8 +13,11 @@ export default function OrderCard({ order, onUpdateStatus, isDarkMode }) {
                     <span className="text-[9px] font-mono opacity-65 block">ID: {order.id}</span>
                     <span className="text-xs font-bold">{order.userName}</span>
                 </div>
+
                 <span className={`text-[10px] font-bold uppercase px-2.5 py-1 rounded-md border ${stepColor}`}>{order.status}</span>
             </div>
+
+
             <div className="py-3 text-xs space-y-1">
                 {order.items.map(it => (
                     <div key={it.id} className="flex justify-between">
@@ -23,8 +26,11 @@ export default function OrderCard({ order, onUpdateStatus, isDarkMode }) {
                     </div>
                 ))}
             </div>
+
+
             <div className="pt-3 border-t border-dashed flex justify-between items-center">
                 <span className="text-base font-extrabold text-amber-500">${order.totalAmount.toFixed(2)}</span>
+
                 <div className="flex gap-1">
                     {order.status === 'Received' && <button onClick={() => onUpdateStatus(order.id, 'Preparing')} className="px-3 py-1.5 rounded-lg bg-amber-500 text-black text-xs font-semibold flex items-center gap-1"><Check className="h-3.5 w-3.5" /> Accept</button>}
                     {order.status === 'Preparing' && <button onClick={() => onUpdateStatus(order.id, 'Out for Delivery')} className="px-3 py-1.5 rounded-lg bg-amber-500 text-white text-xs font-semibold flex items-center gap-1"><Truck className="h-3.5 w-3.5" /> Ship</button>}

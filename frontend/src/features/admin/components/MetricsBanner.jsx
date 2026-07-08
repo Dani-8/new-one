@@ -12,6 +12,7 @@ export default function MetricsBanner({ totalRevenue, totalOrders, totalFoods, a
             ].map((m, i) => (
                 <div key={i} className={`p-4 rounded-2xl border flex items-center space-x-4 ${isDarkMode ? 'bg-zinc-900/40 border-white/[0.04]' : 'bg-white border-amber-100 shadow-sm'}`}>
                     <div className={`p-3 rounded-xl bg-amber-500/10 ${m.color}`}><m.icon className="h-6 w-6" /></div>
+                    
                     <div>
                         <span className="text-[10px] opacity-65 block uppercase tracking-wider font-semibold">{m.title}</span>
                         <span className="text-xl font-extrabold flex items-center gap-1">{m.value}{m.extra}</span>
