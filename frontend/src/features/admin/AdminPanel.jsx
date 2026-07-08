@@ -36,6 +36,7 @@ export default function AdminPanel({ foods, orders, onUpdateOrderStatus, onAddFo
                     </button>
                 )}
             </div>
+            
 
             {activeTab === 'orders' ? (
                 <OrderList orders={orders} onUpdateOrderStatus={onUpdateOrderStatus} isDarkMode={isDarkMode} />
