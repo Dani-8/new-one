@@ -20,8 +20,8 @@ import MenuSection from './features/menu/MenuSection';
 import MealBuilder from './features/menu/MealBuilder';
 import FoodDetailPage from './features/menu/FoodDetailPage';
 import CartDrawer from './features/cart/CartDrawer';
-// import OrderHistoryModal from './features/orders/OrderHistoryModal';
-// import LiveOrderTracker from './features/orders/LiveOrderTracker';
+import OrderHistoryModal from './features/orders/OrderHistoryModal';
+import LiveOrderTracker from './features/orders/LiveOrderTracker';
 import AdminPanel from './features/admin/AdminPanel';
 import BrandHomepage from './features/home/BrandHomepage';
 
