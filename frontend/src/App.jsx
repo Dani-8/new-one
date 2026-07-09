@@ -9,11 +9,12 @@ import { useOrders } from './hooks/useOrders';
 import { useLiveOrderSimulation } from './hooks/useLiveOrderSimulation';
 
 // Data
-import { getStoredFoods, saveStoredFoods, getCurrentUser, setCurrentUser as saveCurrentUser } from './data/data';
+import { getStoredOrders, getStoredFoods, saveStoredFoods, getCurrentUser, setCurrentUser as saveCurrentUser } from './data/data';
 
 // Components
 import BackgroundGlow from './components/BackgroundGlow';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import LoginView from './features/auth/LoginView';
 import ProfileDrawer from './features/auth/ProfileDrawer';
 import MenuSection from './features/menu/MenuSection';
@@ -257,13 +258,13 @@ export default function App() {
         onOpenAuth={() => setIsAuthView(true)}
       />
 
-      {/* <OrderHistoryModal
+      <OrderHistoryModal
         isOpen={isOrdersHistoryOpen}
         onClose={() => setIsOrdersHistoryOpen(false)}
         orders={orders}
         isDarkMode={isDarkMode}
         currentUser={currentUser}
-      /> */}
+      />
 
       <ProfileDrawer
         isOpen={isProfileDrawerOpen}
@@ -281,29 +282,17 @@ export default function App() {
         onSelectFood={setSelectedFoodId}
       />
 
-      {/* {activeOrder && isLiveTrackerOpen && (
+      {activeOrder && isLiveTrackerOpen && (
         <LiveOrderTracker
           activeOrder={activeOrder}
           onClose={() => setIsLiveTrackerOpen(false)}
           isDarkMode={isDarkMode}
           onUpdateOrderStatus={handleUpdateOrderStatus}
         />
-      )} */}
+      )}
 
       {/* Footer */}
-      <footer className={`py-12 border-t mt-12 ${isDarkMode ? 'bg-[#06040c] border-zinc-900 text-gray-500' : 'bg-amber-50/20 border-slate-100 text-gray-600'}`}>
-        <div className="max-w-7xl mx-auto px-4 text-center space-y-4">
-          <div className="flex items-center justify-center gap-1.5">
-            <ChefHat className="h-5 w-5 text-amber-500" />
-            <span className="font-sans font-bold tracking-tight text-sm">
-              Golden Bite Restaurant
-            </span>
-          </div>
-          <p className="text-xs font-light max-w-md mx-auto leading-relaxed">
-            Crafting glowing gastronomic experiences since 2026.
-          </p>
-        </div>
-      </footer>
+        <Footer isDarkMode={isDarkMode} />
     </div>
   );
 }
