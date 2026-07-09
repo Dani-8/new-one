@@ -1,9 +1,9 @@
 // src/features/orders/OrderHistoryModal.jsx
 import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { 
-  X, Calendar, Package, MapPin, CheckCircle, Clock, 
-  Truck, ShieldCheck, AlertCircle 
+import {
+  X, Calendar, Package, MapPin, CheckCircle, Clock,
+  Truck, ShieldCheck, AlertCircle
 } from 'lucide-react';
 
 export default function OrderHistoryModal({
@@ -53,11 +53,10 @@ export default function OrderHistoryModal({
           initial={{ opacity: 0, scale: 0.95, y: 15 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 15 }}
-          className={`relative w-full max-w-2xl overflow-hidden rounded-2xl border p-6 shadow-2xl flex flex-col max-h-[85vh] ${
-            isDarkMode
+          className={`relative w-full max-w-2xl overflow-hidden rounded-2xl border p-6 shadow-2xl flex flex-col max-h-[85vh] ${isDarkMode
               ? 'bg-[#141416] border-white/[0.04] text-white'
               : 'bg-white border-amber-100 text-gray-800'
-          }`}
+            }`}
         >
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-500 to-orange-500" />
 
@@ -90,9 +89,8 @@ export default function OrderHistoryModal({
                   return (
                     <div
                       key={order.id}
-                      className={`p-4 rounded-xl border space-y-4 ${
-                        isDarkMode ? 'bg-zinc-900/30 border-white/[0.04]' : 'bg-amber-50/10 border-amber-100/60'
-                      }`}
+                      className={`p-4 rounded-xl border space-y-4 ${isDarkMode ? 'bg-zinc-900/30 border-white/[0.04]' : 'bg-amber-50/10 border-amber-100/60'
+                        }`}
                     >
                       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-gray-500/5">
                         <div className="space-y-1">
@@ -148,16 +146,15 @@ export default function OrderHistoryModal({
                         <div className="pt-2">
                           <div className="relative flex items-center justify-between">
                             <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-0.5 bg-gray-500/10 -z-10" />
-                            <div className="absolute left-0 top-1/2 -translate-y-1/2 h-0.5 bg-amber-500 -z-10 transition-all duration-500" 
-                                 style={{ width: `${((currentStep - 1) / 3) * 100}%` }} />
+                            <div className="absolute left-0 top-1/2 -translate-y-1/2 h-0.5 bg-amber-500 -z-10 transition-all duration-500"
+                              style={{ width: `${((currentStep - 1) / 3) * 100}%` }} />
 
                             {['Received', 'Preparing', 'On the Road', 'Arrived'].map((label, index) => (
                               <div key={index} className="flex flex-col items-center">
-                                <div className={`h-7 w-7 rounded-full flex items-center justify-center border transition-all ${
-                                  currentStep > index 
-                                    ? 'bg-amber-500 text-white border-amber-500 shadow-md shadow-amber-500/20' 
+                                <div className={`h-7 w-7 rounded-full flex items-center justify-center border transition-all ${currentStep > index
+                                    ? 'bg-amber-500 text-white border-amber-500 shadow-md shadow-amber-500/20'
                                     : isDarkMode ? 'bg-zinc-900/60 text-gray-500 border-white/10' : 'bg-white text-gray-400 border-gray-200'
-                                }`}>
+                                  }`}>
                                   {index === 0 && <CheckCircle className="h-4 w-4" />}
                                   {index === 1 && <Clock className="h-4 w-4" />}
                                   {index === 2 && <Truck className="h-4 w-4" />}

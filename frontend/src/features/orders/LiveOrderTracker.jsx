@@ -139,8 +139,8 @@ export default function LiveOrderTracker({
                         exit={{ opacity: 0, y: 20, scale: 0.9 }}
                         onClick={() => setIsMinimized(false)}
                         className={`w-full p-4 rounded-2xl border flex items-center justify-between shadow-2xl transition-all duration-300 cursor-pointer ${isDarkMode
-                                ? 'bg-[#120f1e]/95 border-amber-500/30 text-white shadow-amber-500/10'
-                                : 'bg-white border-amber-100 text-gray-800 shadow-amber-500/5'
+                            ? 'bg-[#120f1e]/95 border-amber-500/30 text-white shadow-amber-500/10'
+                            : 'bg-white border-amber-100 text-gray-800 shadow-amber-500/5'
                             }`}
                     >
                         <div className="flex items-center space-x-3">
@@ -170,8 +170,8 @@ export default function LiveOrderTracker({
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 50, scale: 0.95 }}
                         className={`rounded-2xl border overflow-hidden shadow-2xl flex flex-col max-h-[75vh] sm:max-h-[85vh] transition-all duration-300 ${isDarkMode
-                                ? 'bg-[#0f0c1b]/95 border-amber-500/30 text-white shadow-amber-500/15'
-                                : 'bg-white border-amber-100 text-gray-800 shadow-amber-500/5'
+                            ? 'bg-[#0f0c1b]/95 border-amber-500/30 text-white shadow-amber-500/15'
+                            : 'bg-white border-amber-100 text-gray-800 shadow-amber-500/5'
                             }`}
                     >
                         {/* Gradient Top Accent */}
@@ -229,10 +229,10 @@ export default function LiveOrderTracker({
                                     return (
                                         <div key={step.name} className="flex flex-col items-center text-center">
                                             <div className={`h-8 w-8 rounded-full flex items-center justify-center border transition-all duration-300 ${isCurrent
-                                                    ? 'bg-amber-500 text-white border-amber-400 ring-4 ring-amber-500/20 scale-110 shadow-lg shadow-amber-500/30'
-                                                    : isActive
-                                                        ? 'bg-amber-600 text-white border-amber-500'
-                                                        : isDarkMode ? 'bg-[#1b162c] text-gray-500 border-white/5' : 'bg-gray-50 text-gray-400 border-gray-100'
+                                                ? 'bg-amber-500 text-white border-amber-400 ring-4 ring-amber-500/20 scale-110 shadow-lg shadow-amber-500/30'
+                                                : isActive
+                                                    ? 'bg-amber-600 text-white border-amber-500'
+                                                    : isDarkMode ? 'bg-[#1b162c] text-gray-500 border-white/5' : 'bg-gray-50 text-gray-400 border-gray-100'
                                                 }`}>
                                                 <StepIcon className="h-4 w-4" />
                                             </div>
@@ -379,10 +379,10 @@ export default function LiveOrderTracker({
                                             className={`flex flex-col max-w-[85%] ${msg.sender === 'user' ? 'ml-auto items-end' : 'mr-auto items-start'}`}
                                         >
                                             <div className={`p-2 rounded-xl leading-relaxed ${msg.sender === 'user'
-                                                    ? 'bg-amber-500 text-white rounded-tr-none'
-                                                    : isDarkMode
-                                                        ? 'bg-[#1b162c] text-white rounded-tl-none border border-amber-500/5'
-                                                        : 'bg-white text-gray-800 rounded-tl-none border border-gray-100 shadow-sm'
+                                                ? 'bg-amber-500 text-white rounded-tr-none'
+                                                : isDarkMode
+                                                    ? 'bg-[#1b162c] text-white rounded-tl-none border border-amber-500/5'
+                                                    : 'bg-white text-gray-800 rounded-tl-none border border-gray-100 shadow-sm'
                                                 }`}>
                                                 {msg.text}
                                             </div>
@@ -421,8 +421,8 @@ export default function LiveOrderTracker({
                                             key={status}
                                             onClick={() => onUpdateOrderStatus(activeOrder.id, status)}
                                             className={`flex-1 text-[9px] py-1 rounded font-mono transition-all border cursor-pointer font-bold ${currentStatus === status
-                                                    ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-sm'
-                                                    : 'bg-transparent text-gray-400 border-gray-500/10 hover:text-white hover:bg-gray-500/5'
+                                                ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-sm'
+                                                : 'bg-transparent text-gray-400 border-gray-500/10 hover:text-white hover:bg-gray-500/5'
                                                 }`}
                                         >
                                             {status.replace('Out for ', '')}
