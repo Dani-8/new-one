@@ -149,6 +149,7 @@ export default function MenuSection({
                                             <Clock className="h-3.5 w-3.5 text-amber-400" />
                                             {food.preparationTime} mins
                                         </span>
+
                                         {food.calories && <span>{food.calories} kcal</span>}
                                     </div>
                                 </div>
@@ -158,10 +159,12 @@ export default function MenuSection({
                                         <span className="text-[10px] font-bold uppercase tracking-wider text-amber-500 mb-1 block">
                                             {food.category}
                                         </span>
+
                                         <h3 className={`font-sans text-base font-bold leading-tight mb-2 ${isDarkMode ? 'text-white group-hover:text-amber-300' : 'text-gray-900 group-hover:text-amber-600'
                                             }`}>
                                             {food.name}
                                         </h3>
+
                                         <p className={`text-xs line-clamp-2 leading-relaxed ${isDarkMode ? 'text-gray-400' : 'text-gray-500'
                                             }`}>
                                             {food.description}
@@ -313,6 +316,7 @@ export default function MenuSection({
                                     <label className="block text-xs font-bold uppercase tracking-wide mb-1 opacity-80">
                                         Special Kitchen Notes
                                     </label>
+                                    
                                     <textarea
                                         placeholder="No onions, sauce on the side, well done patties, etc..."
                                         value={menu.specialInstructions}
