@@ -551,9 +551,10 @@ export default function ProfileDrawer({
                                                         </div>
 
                                                         <div className="flex gap-2">
-                                                            <button onClick={() => onToggleFavorite(food.id)} className="p-1.5 rounded-lg border border-red-500/10 hover:border-red-500/30 text-red-500 hover:bg-red-500/5 cursor-pointer" title="Remove favorite">
-                                                                <Heart className="h-4 w-4 fill-red-500" />
+                                                            <button onClick={() => onToggleFavorite(food.id)} className="p-1.5 rounded-lg border border-amber-500/10 hover:border-amber-500/30 text-amber-500 hover:bg-amber-500/5 cursor-pointer" title="Remove favorite">
+                                                                <Heart className="h-4 w-4 fill-amber-500" />
                                                             </button>
+                                                            
                                                             <button onClick={() => onAddToCart({ foodItem: food, quantity: 1, customizations: {} })} className="px-2.5 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-600 text-white font-bold text-[10px] cursor-pointer">
                                                                 + Add
                                                             </button>
