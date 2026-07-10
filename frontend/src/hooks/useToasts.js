@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef } from 'react'
 
 export function useToasts() {
     const [toasts, setToasts] = useState([]);

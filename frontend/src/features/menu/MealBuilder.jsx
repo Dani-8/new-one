@@ -3,8 +3,8 @@ import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import {
     Sparkles, Search, RefreshCw, ShoppingBag, Plus, ChefHat, AlertCircle
-} from 'lucide-react';
-import { useMealBuilder } from './useMealBuilder';
+} from 'lucide-react'
+import { useMealBuilder } from './useMealBuilder'
 
 export default function MealBuilder({
     foods,
@@ -21,13 +21,16 @@ export default function MealBuilder({
                 <div className="p-2 rounded-xl bg-amber-500/15 border border-amber-500/20 text-amber-400">
                     <ChefHat className="h-6 w-6 animate-bounce" />
                 </div>
+
                 <div>
                     <h2 className="font-sans text-xl font-bold tracking-tight">AI Master Chef Curations</h2>
+
                     <p className="text-xs opacity-75 mt-1">
                         Describe your cravings, diet constraints, or budget. The AI Chef immediately compiles your dream combo!
                     </p>
                 </div>
             </div>
+            
 
             {/* Input Form */}
             <form onSubmit={builder.handleSubmit} className="relative">
