@@ -1,6 +1,7 @@
-import React from 'react';
-import { motion, AnimatePresence } from 'motion/react';
-import { Mail, Lock, User as UserIcon, Shield, CheckCircle } from 'lucide-react';
+import React from 'react'
+import { motion, AnimatePresence } from 'motion/react'
+import { Mail, Lock, User as UserIcon, Shield, CheckCircle } from 'lucide-react'
+
 
 export default function AuthForm({
     isLogin,
@@ -26,12 +27,14 @@ export default function AuthForm({
                     }`}>
                     {isLogin ? 'Step into Golden Bite' : 'Create Account'}
                 </h2>
+
                 <p className={`text-xs sm:text-sm font-light leading-relaxed ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
                     {isLogin
                         ? 'Sign in to access your glowing dashboard, customized chef orders, and live delivery trackers.'
                         : 'Unlock the ultimate gourmet customization experience, save recipes, and track food live.'}
                 </p>
             </div>
+
 
             <AnimatePresence mode="wait">
                 {error && (
